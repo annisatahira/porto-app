@@ -29,8 +29,8 @@ const testimonials = [
 
 const TestimonialSection = () => {
   return (
-    <Flex bg="gray.50" flexDirection="column" alignItems="center">
-      <Box bg="gray.50" pb={20} maxW="1440px" w="100%" mx="auto" px={20}>
+    <Flex bg="white" flexDirection="column" alignItems="center">
+      <Box bg="white" pb={20} maxW="1440px" w="100%" mx="auto" px={20}>
         <Flex
           direction={{ base: "column", md: "row" }}
           align="start"
