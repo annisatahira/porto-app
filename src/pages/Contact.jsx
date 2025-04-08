@@ -15,6 +15,7 @@ const ContactPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <Box bg="gray.50" px={8} py={16} marginTop="-5rem">
       <Flex

@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {/* Full Height & Half Width Menu Panel */}
       {showFloatingMenu && (
-        <Box
+        <Flex
           position="fixed"
           top={0}
           right={0}
@@ -113,11 +113,13 @@ const Navbar = () => {
           zIndex={99}
           boxShadow="xl"
           p={6}
+          flexDirection="column"
+          justifyContent="space-between"
         >
           <VStack align="flex-start" spacing={6} gap={5}>
             <Link smooth to="/" onClick={closeMenu}>
               <Text
-                fontSize="xl"
+                fontSize="60px"
                 fontWeight="bold"
                 color="white"
                 _hover={{ color: "teal.300" }}
@@ -127,7 +129,7 @@ const Navbar = () => {
             </Link>
             <HashLink smooth to="/#about" onClick={closeMenu}>
               <Text
-                fontSize="xl"
+                fontSize="60px"
                 fontWeight="bold"
                 color="white"
                 _hover={{ color: "teal.300" }}
@@ -137,7 +139,7 @@ const Navbar = () => {
             </HashLink>
             <HashLink smooth to="/#work" onClick={closeMenu}>
               <Text
-                fontSize="xl"
+                fontSize="60px"
                 fontWeight="bold"
                 color="white"
                 _hover={{ color: "teal.300" }}
@@ -147,16 +149,23 @@ const Navbar = () => {
             </HashLink>
             <Link to="/contact" onClick={closeMenu}>
               <Text
-                fontSize="xl"
+                fontSize="60px"
                 fontWeight="bold"
                 color="white"
-                _hover={{ color: "teal.300" }}
+                _hover={{ color: "white" }}
               >
                 Contact
               </Text>
             </Link>
           </VStack>
-        </Box>
+
+          <HStack fontSize="18px" gap={10}>
+            <Text color="white">Linkedin</Text>
+            <Text color="white">Twitter</Text>
+            <Text color="white">Instagram</Text>
+            <Text color="white">Webflow</Text>
+          </HStack>
+        </Flex>
       )}
     </>
   );
